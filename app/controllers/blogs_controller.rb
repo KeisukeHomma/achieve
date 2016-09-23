@@ -14,7 +14,7 @@ class BlogsController < ApplicationController
   end
   
   def create
-    @blog = Blog.create(blogs_params)
+    @blog = Blog.new(blogs_params)
     if @blog.save
       #一覧画面へ遷移し、ブログを作成した項のメッセージを表示
       redirect_to blogs_path, notice: "ブログを作成しました！"

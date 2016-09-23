@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   #get 'blogs' => 'blogs#index'
   resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
     collection do
