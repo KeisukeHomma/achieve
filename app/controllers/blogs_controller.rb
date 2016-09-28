@@ -33,7 +33,6 @@ class BlogsController < ApplicationController
   end
 
   def update
-    #@blog = Blog.find(params[:id])
     @blog.update(blogs_params)
     if @blog.save
       #一覧画面へ遷移し、ブログを編集した項のメッセージを表示
