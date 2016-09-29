@@ -7,10 +7,16 @@
       <% @blogs.each do |blog| %>
         <div class="row">
           <h4><strong><%= blog.title %></strong></h4>
-          <p><%= blog.content %></p>
-          <%= link_to "編集", edit_blog_path(blog.id), class: 'btn btn-default btn-sm btn-success' %>
-          <%= link_to "削除", blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-danger' %>
-          <span class="label label-default" style="float: right;"><%= blog.user.name %></span>
+          <div class="col-xs-12 col-sm-2 thumbnail">
+            <%= profile_img(blog.user) if profile_img(blog.user) %>
+          </div>
+
+          <div class="col-xs-12 col-sm-10">
+            <p><%= blog.content %></p>
+            <%= link_to "編集", edit_blog_path(blog.id), class: 'btn btn-default btn-sm btn-success' %>
+            <%= link_to "削除", blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-danger' %>
+            <span class="label label-default" style="float: right;"><%= blog.user.name %></span>
+          </div>
         </div>
       <% end %>
     </div>

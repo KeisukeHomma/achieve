@@ -177,3 +177,12 @@ h3:first-child{
 .page-back{
   margin: 50px 0 30px 0;
 }
+
+/* サムネイル */
+.thumbnail{
+  border: rgba(0, 0, 0, 0);
+}
+
+.thumbnail img{
+  border-radius: 50%;
+}

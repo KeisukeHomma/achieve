@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   # before_actionで下で定義したメソッドを実行
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  PERMISSIBLE_ATTRIBUTES = %i(name)
+  PERMISSIBLE_ATTRIBUTES = %i(name avatar avatar_cache)
 
   #権限無い系のエラーでリダイレクト
   rescue_from CanCan::AccessDenied do |exception|
