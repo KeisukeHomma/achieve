@@ -19,7 +19,7 @@ end
 
 
 n = 1
-while n <= 100
+while n <= 20
   paragraph = Faker::Lorem.paragraph
   title = Faker::Lorem.sentence
   Blog.create(
