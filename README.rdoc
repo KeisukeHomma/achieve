@@ -1,28 +1,10 @@
-== Achieve README
+== このRailsアプリケーションについて
+このアプリケーションは学習のために作られました。ブログの機能を再現しています。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* ログイン機能
+* facebookログイン機能
+* ブログ投稿機能
+* ブログコメント機能
+* 画像投稿機能
+* ユーザー管理機能
+* 画像投稿機能
